@@ -1,6 +1,6 @@
 # docker-desk
 
-Desk for working with docker. It offers commandline shortcuts for working with docker.
+Desk for working with docker. It offers command-line shortcuts for working with docker.
 For mor information about Desk visit https://github.com/jamesob/desk
 
 ## Instalation
