@@ -256,9 +256,9 @@ dkill() {
 	docker kill $@
 }
 
-#docker logs -f $1
+#docker logs -f --tail 10 $1
 dtail() {
-	docker logs -f $1
+	docker logs -f --tail 10 $1
 }
 
 #docker logs $1
