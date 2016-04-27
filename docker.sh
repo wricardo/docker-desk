@@ -174,11 +174,6 @@ dpsaq() {
 	docker ps -aq
 }
 
-#docker build -t $1
-db() {
-	docker build -t "$1" .
-}
-
 #docker stop $(docker ps -q)
 dstopall() {
 	docker stop $(docker ps -q)
