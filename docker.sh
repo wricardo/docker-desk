@@ -37,10 +37,10 @@ mhosts(){
 	fi
 }
 
-#destroy and create docker-machine default
+#destroy and create a new docker-machine
 mredo() {
-	mdestroy
-	mcreate
+	mdestroy $1
+	mcreate $1
 }
 
 #docker-machine rm [name]
