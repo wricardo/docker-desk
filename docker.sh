@@ -245,6 +245,11 @@ dtail() {
 	docker logs -f $1
 }
 
+#docker logs -f $1
+dlogs() {
+	dtail $1
+}
+
 #docker rmi $@
 drmi() {
 	docker rmi $@
@@ -254,6 +259,3 @@ drmi() {
 dcleani() {
 	docker rmi $(docker images | grep "^<none>" | awk "{print $3}")
 }
-
-#docker logs
-alias dlog="docker logs"
