@@ -159,9 +159,19 @@ dps() {
 	docker ps
 }
 
+#docker ps -q
+dpsq() {
+	docker ps -q
+}
+
 #docker ps -a
 dpsa() {
 	docker ps -a
+}
+
+#docker ps -aq
+dpsaq() {
+	docker ps -aq
 }
 
 #docker build -t $1
