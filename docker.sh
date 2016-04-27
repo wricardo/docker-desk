@@ -8,6 +8,17 @@ mip() {
 	fi                   
 	ip=$(docker-machine ip $mname)
 	echo $ip
+}
+
+# Adds a entry to your /etc/hosts in the format docker-machine-<name>
+mhosts(){
+	if [ -n "$1" ]
+	then
+	  mname="$1"
+	else  
+	  mname="default"
+	fi                   
+	ip=$(docker-machine ip $mname)
 
 	exists=$(grep "$ip docker-machine-$mname" /etc/hosts )
 	if [ ! -n "$exists" ]
