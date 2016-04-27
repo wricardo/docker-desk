@@ -261,9 +261,9 @@ dtail() {
 	docker logs -f $1
 }
 
-#docker logs -f $1
+#docker logs $1
 dlogs() {
-	dtail $1
+	docker logs $1
 }
 
 #docker rmi $@
