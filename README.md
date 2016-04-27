@@ -1,7 +1,7 @@
 # docker-desk
 
 Desk for working with docker. It offers command-line shortcuts for working with docker.
-For mor information about Desk visit https://github.com/jamesob/desk
+For more information about Desk visit https://github.com/jamesob/desk
 
 ## Instalation
 Install and configure desk. https://github.com/jamesob/desk
